@@ -782,8 +782,6 @@ Questions
   display: none;
 }
 
-
-
 /*
 =============== 
 Reviews
@@ -911,6 +909,8 @@ footer p {
 .footer a, span{
   color: #a7bfb7;
   line-height: 2rem;
+  font-size: 1.2rem;
+  
 }
 .all-footer{
   display: flex;
@@ -925,18 +925,19 @@ footer p {
   flex-direction: column;
   width: 19%;
 }
-
-
+.social{
+  display: flex;
+  
+}
+.social img{
+  width: 1rem;
+  margin-right: .5rem;
+}
 
 form {
   /* border: 3px solid #f1f1f1; */
   font-family: Arial;
 }
-
-/* .container {
-  padding: 20px;
-  background-color: #f1f1f1;
-} */
 
 input[type=text], input[type=submit] {
   width: 90%;
