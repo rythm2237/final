@@ -285,6 +285,11 @@ header {
 }
 .title span {
   color: var(--clr-secondary);
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-left: .4rem;
+
+
 }
 #about,
 #services,
@@ -424,6 +429,12 @@ Services
 .container{
   min-width: 80%;
 }
+
+@media screen and (max-width: 768px){
+  .container{
+    width: 650px;
+  }
+}
 /* @media screen and (max-width: 1200px){
   .container{
     width: 950px;
@@ -434,11 +445,7 @@ Services
     width: 750px;
   }
 }
-@media screen and (max-width: 768px){
-  .container{
-    width: 650px;
-  }
-}
+
 @media screen and (max-width: 600px){
   .container{
     width: 550px;
@@ -543,7 +550,6 @@ Galery
 }
 
 #all{
-  //border: 1px solid red;
   max-width: 1250px;
   overflow: hidden;
   margin: 5px auto;
@@ -892,13 +898,12 @@ Reviews
 /* footer */
 footer {
   background: var(--clr-grey-1);
-  padding: 1rem;
 }
 footer p {
   color: var(--clr-white);
   text-align: center;
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
+  /* text-transform: capitalize; */
+  /* letter-spacing: var(--spacing); */
   margin-bottom: 0;
 }
 
@@ -907,7 +912,7 @@ footer p {
   flex-direction: column;
   
 }
-.footer a, span{
+.footer a, span, p{
   color: #a7bfb7;
   line-height: 2rem;
   font-size: 1.2rem;
@@ -919,12 +924,21 @@ footer p {
   align-items: center;
   align-content: center;
   margin:0 3.5rem 2rem 1rem;
+  padding: 2rem;
 
 }
 .footer-items{
   display: flex;
   flex-direction: column;
   width: 19%;
+}
+
+.firstPart img{
+  width: 65%;
+}
+.addressPart{
+  width: 23%;
+
 }
 .social{
   display: flex;
@@ -935,21 +949,24 @@ footer p {
   margin-right: .5rem;
 }
 
-form {
+.form {
   /* border: 3px solid #f1f1f1; */
   font-family: Arial;
-}
+  box-shadow: 2px 2px 6px #fff;
+  padding: .4rem;
+  
+  }
 
 input[type=text], input[type=submit] {
   width: 90%;
-  padding: 12px;
-  margin: 3px 0;
+  padding: .4rem;
+  margin: 4px auto;
   display: inline-block;
   box-sizing: border-box;
 }
 
 input[type=checkbox] {
-  margin: .2rem;
+  margin: .7rem ;
 }
 
 input[type=submit] {
@@ -963,15 +980,26 @@ input[type=submit]:hover {
 }
 
 .form label{
-  display:flex ;
-  align-items: baseline;
-  font-size: 0.9rem;
-
-  
+  display: flex;
+  align-items: center;
 }
+
 
 /* responsive */
 
+@media screen and (max-width: 1200px){
+  .footer a, span, p{
+    color: #a7bfb7;
+    line-height: 1.7rem;
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .form p{
+  font-size: .65rem;
+}
+}
 
 
 @media screen and (min-width: 800px) {
