@@ -21,7 +21,6 @@ navToggle.addEventListener("click", function () {
 });
 
 // ********** fixed navbar ************
-
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
 
@@ -74,7 +73,6 @@ scrollLinks.forEach((link) => {
 });
 // calculate heights
 
-
 //using selectors inside the element
 const questions = document.querySelectorAll(".question");
 
@@ -113,8 +111,6 @@ about.addEventListener("click", function (e) {
     element.classList.add("active");
   }
 });
-
-
 //slider
 let pos=0;
 function move(i) {
@@ -141,11 +137,7 @@ left.onclick=function () {
   }
 
 }
-
-
-
 //Galery
-
 
 function popup(i){
   overlay.className= "show"
@@ -158,22 +150,22 @@ function closeAll(){
 }
 function creation(image, title, des, price){
   let it = document.createElement("div")
-      it.className = "items hide"
-          
-          let im = document.createElement("img")
-              im.src = "img/" + image
-          let mas = document.createElement("div")
-              mas.className = "info"
+    it.className = "items hide"
+        
+      let im = document.createElement("img")
+          im.src = "img/" + image
+      let mas = document.createElement("div")
+          mas.className = "info"
 
-                  let h = document.createElement("h2")
-                  h.innerHTML = title
-                  let par = document.createElement("p")
-                  par.innerHTML = des
-                  let sp = document.createElement("span")
-                  sp.innerHTML = price
-                  let anc = document.createElement("a")
-                  anc.innerHTML = "Buy"
-                  anc.href = "#"
+          let h = document.createElement("h2")
+          h.innerHTML = title
+          let par = document.createElement("p")
+          par.innerHTML = des
+          let sp = document.createElement("span")
+          sp.innerHTML = price
+          let anc = document.createElement("a")
+          anc.innerHTML = "Buy"
+          anc.href = "#"
 mas.appendChild(h)
 mas.appendChild(par)
 mas.appendChild(sp)
